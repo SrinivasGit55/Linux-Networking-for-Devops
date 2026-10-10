@@ -1,0 +1,33 @@
+Linux-Networking-for-Devops
+
+
+Network:
+     A computer network formed when two or more computers are connected in some way, to share information or resources more broadly. 
+A network is the interconnection of computing devices, from computers, to phones, to printers to smart devices and so on
+
+
+Network are typically made up of servers and clients:
+
+Client-Server model: 
+     This model, user devices or client, connect via to a network with centrally located server to get the resources they need.
+
+
+A Server:
+     is a large-capacity computer that contains the hard drives, printers and resources that are shared with other computers on a network
+server are designed to be able to handel more intensive workload that a personal computer can.Personal computer could run server process 
+but would not be able to handle the waste and crash
+
+
+Client: 
+     are other computers and devices on a network that request and receive resources from servers. Example end-user devices like phones 
+and personal computers
+
+
+Private network:- 
+     A private network excludes unauthorised users from joining network. An example is an intranet. A network where the connection is between 
+devices within a particular setting.
+
+
+Public network:- 
+     The public internet is also type of network. It is a global of other networks, allowing for worldwide sharing of information.
+Since it is accessible to public, the internet is an example public network.

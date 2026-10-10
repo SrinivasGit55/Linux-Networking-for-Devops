@@ -3,7 +3,7 @@ Linux-Networking-for-Devops
 
 Network:
      A computer network formed when two or more computers are connected in some way, to share information or resources more broadly. 
-A network is the interconnection of computing devices, from computers, to phones, to printers to smart devices and so on
+     A network is the interconnection of computing devices, from computers, to phones, to printers to smart devices and so on
 
 
 Network are typically made up of servers and clients:
@@ -14,22 +14,56 @@ Client-Server model:
 
 A Server:
      is a large-capacity computer that contains the hard drives, printers and resources that are shared with other computers on a network
-server are designed to be able to handel more intensive workload that a personal computer can.Personal computer could run server process 
-but would not be able to handle the waste and crash
+     server are designed to be able to handel more intensive workload that a personal computer can.Personal computer could run server process 
+     but would not be able to handle the waste and crash
 
 
 Client: 
      are other computers and devices on a network that request and receive resources from servers. Example end-user devices like phones 
-and personal computers
+     and personal computers
 
+How does the client send a request to a server:
+     Client side scripting enables interaction within a webpage... the code requried to process user input in downloaded and compiled  byby the browser 
+     plugin
+
+How does a server process a request:
+     Server is a web application server at a remote location that will process web request and send pages to the client
+     When a user goes to browser and types a webs... browser will search if website exist then asks server for specific page... server reacts by transferring files
+     browser execute those files.
+
+     A Client: A device or program that requires services via the web. Request the Server for content. The efficiency is limited. There are two or more clients.
+     Server: A device or program that response by providing services. Provide function when client requests. There will be only one server. The power is high and 
+     highlyefficient.
+
+Web Server:
+     A computer system that runs a website using HTTP, nginx, Apache... delivers content or web pages to end-users...
+     Delivers STATIC files - HTML, CSS, 
+     imagesHandles HTTP onlyIn
+     Linux: nginx, apache2 listening on port 80/443
+     Fast, does not run heavy code
+
+Application Server: 
+     is a Server program in a Computer in a distributed network that provides the business logic for an application example are 
+     JBoss, oracle weblogic Server
+     Runs BUSINESS LOGIC - login, payment, database queries
+     Handles dynamic code - Java, Python, NodeIn 
+     Linux: Tomcat, JBoss, gunicorn, pm2
+     Example: When you click "Buy Now", web server forwards to app server
+
+Server -> Physical Server / Virtual Server
+
+Physical server: 
+     is a dedicated Server, which use the traditional CPU and RAM for that one server
+
+Virtual Server: 
+     use hypervisor to divide the physical server into two or more virtual servers which share the resources like CPU and RAM
 
 Private network:- 
      A private network excludes unauthorised users from joining network. An example is an intranet. A network where the connection is between 
-devices within a particular setting.
-
+     devices within a particular setting.
 
 Public network:- 
      The public internet is also type of network. It is a global of other networks, allowing for worldwide sharing of information.
-Since it is accessible to public, the internet is an example public network.
+     Since it is accessible to public, the internet is an example public network.
 
 

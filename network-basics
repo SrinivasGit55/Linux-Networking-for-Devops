@@ -5,18 +5,63 @@ Network:
      A computer network formed when two or more computers are connected in some way, to share information or resources more broadly. 
      A network is the interconnection of computing devices, from computers, to phones, to printers to smart devices and so on
 
+Introduction to Data Communication
+     Data communication refers to the exchange of data between two or more devices via some form of transmission medium 
+     (such as a cable or wireless signal).
+Fundamental Components of Data Communication
+     Message: The information (data) to be communicated (text, numbers, pictures, audio, video).
+     Sender: The device that sends the data message (computer, workstation, telephone handset, etc.).
+     Receiver: The device that receives the message.
+     Transmission Medium: The physical path by which a message travels from sender to receiver           
+                         (twisted-pair wire, coaxial cable, fiber-optic cable, or radio waves).
+     Protocol: A set of rules that govern data communication (e.g., TCP, IP, HTTP). It represents an agreement between the communicating devices.
 
-Network are typically made up of servers and clients:
+Types of Computer Networks
+           Networks are categorized based on their geographical scale and coverage area:
+     PAN (Personal Area Network):
+          Scope: Centered around an individual person within a single room or short range (typically within 10 meters).
+          Example: Connecting a smartphone to a smartwatch or Bluetooth headphones.
 
-Client-Server model: 
-     This model, user devices or client, connect via to a network with centrally located server to get the resources they need.
+     LAN (Local Area Network):
+          Scope: Connects computers and devices within a limited geographical area, such as a home, office building, or school.
+          Characteristics: High data transfer rates, secure, and privately owned.
 
+     WLAN (Wireless Local Area Network):
+          Scope: A LAN that relies on wireless communication technologies (like Wi-Fi) rather than physical cables.
 
-A Server:
-     is a large-capacity computer that contains the hard drives, printers and resources that are shared with other computers on a network
-     server are designed to be able to handel more intensive workload that a personal computer can.Personal computer could run server process 
-     but would not be able to handle the waste and crash
+     MAN (Metropolitan Area Network):
+          Scope: Covers a larger geographic area than a LAN, typically spanning an entire city or town.
+          Example: A city's cable television network or municipal Wi-Fi network.
 
+     WAN (Wide Area Network):
+          Scope: Spans a large geographical area, often a country, continent, or even the entire globe.
+          Example: The Internet is the largest and most well-known WAN.
+
+Network Topologies 
+          Topology refers to the physical or logical arrangement of nodes and links in a network.
+     Bus Topology: Devices are connected to a single central cable (the "bus").
+          Pros: Easy to set up, uses less cable.
+          Cons: If the main cable breaks, the entire network goes down.
+      Star Topology: All devices are connected to a central hub or switch.
+          Pros: Easy to troubleshoot; failure of one cable only disconnects that specific device.
+          Cons: If the central hub fails, the whole network fails.
+     Ring Topology: Devices are connected in a circular loop. Data travels in one direction.
+          Pros: Equal access for all devices.
+          Cons: A break in any single cable disrupts the entire ring.
+     Mesh Topology: Every device is connected to every other device (Full Mesh) or to multiple devices (Partial Mesh).
+          Pros: Highly redundant and fault-tolerant; extremely secure.
+          Cons: Expensive and complex cabling.
+     Tree Topology: A combination of Star and Bus topologies, arranged in a hierarchy (resembling branches on a tree).
+     Hybrid Topology: A combination of two or more different topologies (e.g., Star-Ring).
+
+2. Types of Computer Networks
+          Network are typically made up of servers and clients:
+     Client-Server model: 
+          This model, user devices or client, connect via to a network with centrally located server to get the resources they need.
+     A Server:
+          is a large-capacity computer that contains the hard drives, printers and resources that are shared with other computers on a network
+          server are designed to be able to handel more intensive workload that a personal computer can.Personal computer could run server 
+          process but would not be able to handle the waste and crash
 
 Client: 
      are other computers and devices on a network that request and receive resources from servers. Example end-user devices like phones 
@@ -66,4 +111,30 @@ Public network:-
      The public internet is also type of network. It is a global of other networks, allowing for worldwide sharing of information.
      Since it is accessible to public, the internet is an example public network.
 
+The OSI Model (Open Systems Interconnection)
+          The OSI Model is a conceptual framework developed by the ISO that standardizes the functions of a telecommunication or computing system into
+          7 distinct layers.
+     1)Physical: Transmission and reception of raw bit streams over a physical medium.ex(Cables, Hubs, Repeater)
+     2)Data Link: Physical addressing (MAC addresses), framing, and error detection on local links.ex(ethernet, Switches, MAC)
+     3)Network: Logical addressing (IP addresses) and routing packets across networks.ex(IP,IPv4/IPv6, ICMP, Routers)
+     4)Transport: End-to-end communication, flow control, and error correction.ex(TCP, UDP)
+     5)Session: Establishes, manages, and terminates sessions between applications.ex(NetBIOS, RPC)
+     6)Presentation: Data translation, encryption, compression, and formatting.ex(SSL/TLS, JPEG,)
+     7)Application:	Network services directly to end-user applications (interface).ex(HTTP, HTTPS, FTP, SMTP, DNS)
 
+The TCP/IP Model
+          The TCP/IP Model is a more concise, 4-layer model that serves as the actual architectural foundation of the modern Internet.
+     Layer 4: Application Layer
+          Combines the functions of the OSI Application, Presentation, and Session layers.
+          Handles high-level protocols, user representation, and session control. (Examples: HTTP, FTP, DNS)
+     Layer 3: Transport Layer
+          Equivalent to the OSI Transport layer. Provides reliable (TCP) or unreliable (UDP) delivery of data packets between hosts.
+     Layer 2: Internet Layer
+          Equivalent to the OSI Network layer. Handles packet routing, wrapping data into IP datagrams, and logical addressing
+          . (Examples: IP, ICMP)
+     Layer 1: Network Access (Link) Layer
+          Combines OSI's Data Link and Physical layers. Deals with the physical hardware layout and local network media access.
+
+OSI vs. TCP/IP Summary
+     OSI is a theoretical reference model used for understanding and designing network architecture.
+     TCP/IP is a practical, implementation-driven model built specifically for the Internet suite.

@@ -75,15 +75,15 @@ Both protocols can operate on modern networks. IPv6 adoption does not mean IPv4 
 
 ---
 
-## 5. Are There Alternatives to IPv4?
+## 5. Are There Alternatives to IP Addressing?
 
-Yes, but not all alternatives perform the same job.
+Yes, but they are not replacements for the entire Internet Protocol model. They solve different parts of the problem.
 
-### A. IPv6 — Alternative IP Version
+### A. IPv6 is not an alternative to IP addressing itself
 
-IPv6 provides network-layer addressing using 128-bit addresses.
+IPv6 is a different version of the same protocol family.
 
-It is the principal successor to IPv4.
+It is not a replacement for the concept of IP addressing; it is a newer version of IP with a larger address space.
 
 ### B. MAC Addresses — Local Network Identification
 
@@ -112,13 +112,23 @@ DNS translates domain names into IP addresses when required.
 
 DNS does not replace IP addressing. It helps applications discover the addresses associated with names.
 
-### D. Other Network-Layer Protocols
+### D. Hostnames and Service Discovery
+
+Hostnames such as `db01`, `app-server`, or `api.internal` are often used in local environments.
+
+These names are easier for humans to remember, but they must still map to an IP address for actual network communication.
+
+### E. Legacy Network-Layer Protocols
 
 Other networking technologies and protocols exist, including legacy network-layer protocols such as IPX and AppleTalk.
 
-However, IPv4 and IPv6 are the principal IP versions used in modern Internet networking.
+These are older and not widely used in modern enterprise and cloud networks.
 
-Key takeaway: IPv6 is an alternative IP version. MAC addresses and DNS names solve different problems.
+### Important takeaway
+
+- IPv6 is a version of IP, not an alternative to IP addressing.
+- MAC addresses, DNS names, and hostnames solve different types of addressing and naming problems.
+- IP remains the standard foundation for routing and communication across connected networks.
 
 ---
 

@@ -4,10 +4,9 @@ This repository contains beginner-friendly networking notes and learning files f
 
 ## Files
 
-- [network-basics](./network-basics)
 - [IP-Addressing.md](./IP-Addressing.md)
 - [Network-Basics.md](./Network-Basics.md)
-- [CCNA-Day3-IP-Addressing.md](./CCNA-Day3-IP-Addressing.md)
+- [IPv4-Addressing.md](./IPv4-Addressing.md)
 
 ## Repository Purpose
 

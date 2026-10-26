@@ -1,4 +1,4 @@
-# CCNA Day 3 - IPv4 Addressing Basics
+#IPv4 Addressing Basics
 
 ## 1. Learning Objectives
 

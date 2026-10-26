@@ -1,31 +1,35 @@
 # Linux Networking for DevOps
 
-This repository contains beginner-friendly networking notes used for learning and revision.
+This repository contains beginner-friendly networking notes and learning files for DevOps, Linux networking, and CCNA-style fundamentals.
 
-## Table of Contents
+## Files
 
-- [CCNA Day 3 - IPv4 Addressing Basics](./notes/CCNA-Day3-IP-Addressing.md)
+- [Network-Basics.md](./Network-Basics.md)
+- [IP-Addressing.md](./IP-Addressing.md)
+- [CCNA-Day3-IP-Addressing.md](./CCNA-Day3-IP-Addressing.md)
 
 ## Repository Purpose
 
-This repo is focused on core networking concepts that are useful for DevOps, system administration, cloud operations, and CCNA preparation.
+This repo is focused on practical networking concepts that are useful for DevOps, system administration, cloud operations, and networking interviews.
 
 ## Topics Covered
 
 - Network fundamentals
 - OSI and TCP/IP models
-- IP addressing and subnetting basics
-- Network and host parts
+- IP addressing basics
+- IPv4 concepts and addressing flow
+- Network and host portions
 - Gateway and routing concepts
-- IPv4 validation and troubleshooting
+- Practical network troubleshooting
 
 ## Recommended Study Order
 
-1. Review the networking basics and OSI/TCP-IP model notes.
-2. Study IPv4 addressing concepts.
-3. Move to subnetting and routing.
-4. Practice with IP calculations and validation scenarios.
+1. Start with the network basics file.
+2. Move to IP addressing concepts.
+3. Review the CCNA Day 3 IPv4 addressing lesson.
+4. Practice network validation and troubleshooting scenarios.
+5. Continue with additional networking topics as needed.
 
 ## Notes
 
-The detailed lesson for this topic is maintained in the `notes/` folder.
+The repository is intentionally kept simple and flat, with each topic as its own file in the root directory.

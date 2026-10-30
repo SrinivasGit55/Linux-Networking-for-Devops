@@ -33,11 +33,3 @@ This repository focuses on practical networking concepts useful for DevOps, syst
 4. Study Class C subnetting and CIDR logic.
 5. Practice network validation and troubleshooting scenarios.
 6. Continue with additional networking topics as needed.
-
-## Notes
-
-The repository is intentionally kept simple and flat, with each topic as its own file in the root directory.
-
-## Subnetting Lesson
-
-The subnetting lesson notes are available in [notes.md](./notes.md).

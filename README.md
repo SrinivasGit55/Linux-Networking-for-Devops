@@ -6,8 +6,8 @@ This repository contains beginner-friendly networking notes and learning files f
 
 - [Network-Basics.md](./Network-Basics.md)
 - [IP-Addressing.md](./IP-Addressing.md)
-- [IPv4-Addressing.md](./IPv4-Addressing.md)
 - [notes.md](./notes.md)
+- [README.md](./README.md)
 
 ## Repository Purpose
 

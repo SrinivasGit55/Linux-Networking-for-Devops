@@ -1,9 +1,7 @@
-# Subnetting Deep Dive – Breaking Large Networks, Class C Borrowing, Magic Table & VLSM
-
+# Subnetting Deep Dive –
 ## 1. Title and Learning Objectives
 
-Title: Subnetting Deep Dive – Breaking Large Networks, Class C Borrowing, Magic Table & VLSM
-
+Title: Subnetting Deep Dive 
 ### Learning Objectives
 By the end of this lesson, you should be able to:
 - Explain what subnetting is and why it became necessary

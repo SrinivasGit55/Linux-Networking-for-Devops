@@ -7,6 +7,7 @@ This repository contains beginner-friendly networking notes, subnetting explanat
 - [Network-Basics.md](./Network-Basics.md)
 - [IP-Addressing.md](./IP-Addressing.md)
 - [Subnetting-Deep-Dive.md](./Subnetting-Deep-Dive.md)
+- [CCNA-Day-4-Inter-Networking-Devices.md](./CCNA-Day-4-Inter-Networking-Devices.md)
 - [README.md](./README.md)
 
 ## Repository Purpose
@@ -36,6 +37,10 @@ This repository is designed for practical learning in:
 - Docker and Kubernetes networking basics
 - Firewall and security CIDR examples
 - Practical network troubleshooting
+- Inter-networking devices: hubs, switches, and routers
+- MAC learning, flooding, and forwarding
+- ARP and IPv6 Neighbor Discovery
+- Default gateways and routed packet flow
 
 ## Recommended Learning Order
 
@@ -46,6 +51,7 @@ This repository is designed for practical learning in:
 5. Practice subnet calculations using ipcalc
 6. Study VLSM and efficient IP planning
 7. Apply subnetting in DevOps and cloud networking scenarios
+8. Study device behavior with CCNA internetworking concepts
 
 ## Notes
 

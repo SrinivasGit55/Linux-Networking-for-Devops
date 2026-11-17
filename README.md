@@ -11,7 +11,7 @@ This repository contains beginner-friendly networking notes, subnetting explanat
 - [Subnetting-Supernetting.md](./Day_5-Subnetting-and-Supernetting.md)
 - [Inter-Networking-Devices.md](./Day_6-Inter-Networking-Devices.md)
 - [DHCP, TCP, and Port Numbers](./Day_7-DHCP-TCP-and-Port-Numbers.md)
-- [README.md](./README.md)
+- [Subnetting Practice Questions with Answers](./Day_8-Subnetting-Practice-Questions.md)
 
 ## Repository Purpose
 
@@ -48,6 +48,7 @@ This repository is designed for practical learning in:
 - TCP connection establishment, windowing, flow control, and congestion control
 - Common TCP/UDP ports and end-to-end FTP communication
 - ARP, routing, NAT, TTL, and Ethernet FCS/CRC
+- Subnetting practice using CIDR prefixes, block sizes, network IDs, and broadcast IDs
 
 ## Recommended Learning Order
 
@@ -60,6 +61,7 @@ This repository is designed for practical learning in:
 7. Apply subnetting in DevOps and cloud networking scenarios
 8. Study device behavior with CCNA internetworking concepts
 9. Learn DHCP, TCP communication, port numbers, and end-to-end packet flow
+10. Solve the subnetting practice questions and review the step-by-step calculations in Day 8
 
 ## Notes
 

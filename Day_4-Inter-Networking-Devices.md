@@ -1,6 +1,5 @@
 # CCNA Day 4 – Internetworking Devices and Data Transmission
 
-**Video:** [200-301 CCNA v3.0 | Day 4: Inter-Networking Devices](https://www.youtube.com/watch/dd_fKRA7lBA)  
 **Topics:** Hubs, bridges, switches, routers, collision and broadcast domains, ARP, NDP, and packet forwarding.
 
 ---

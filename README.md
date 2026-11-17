@@ -4,10 +4,12 @@ This repository contains beginner-friendly networking notes, subnetting explanat
 
 ## Daily / Topic Notes
 
-- [Network-Basics.md](./Network-Basics.md)
-- [IP-Addressing.md](./IP-Addressing.md)
-- [Subnetting-Deep-Dive.md](./Subnetting-Deep-Dive.md)
-- [CCNA-Day-4-Inter-Networking-Devices.md](./CCNA-Day-4-Inter-Networking-Devices.md)
+- [Network-Basics.md](./Day_1-Network-Basics.md)
+- [IP-Addressing.md](./Day_2-IP-Addressing.md)
+- [IPv4-Addressing.md](./Day_3-IPv4-Addressing.md)
+- [Subnetting-Deep-Dive.md](./Day_4-Subnetting-Deep-Dive.md)
+- [Subnetting-Supernetting.md](./Day_5-Subnetting-Supernetting.md)
+- [Inter-Networking-Devices.md](./Day_6-Inter-Networking-Devices.md)
 - [README.md](./README.md)
 
 ## Repository Purpose
@@ -15,7 +17,7 @@ This repository contains beginner-friendly networking notes, subnetting explanat
 This repository is designed for practical learning in:
 - Linux networking
 - IPv4 addressing
-- CIDR and subnetting
+- CIDR and subnetting also covered supernettind
 - CCNA-style networking fundamentals
 - DevOps network design and troubleshooting
 

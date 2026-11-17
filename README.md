@@ -8,7 +8,7 @@ This repository contains beginner-friendly networking notes, subnetting explanat
 - [IP-Addressing.md](./Day_2-IP-Addressing.md)
 - [IPv4-Addressing.md](./Day_3-IPv4-Addressing.md)
 - [Subnetting-Deep-Dive.md](./Day_4-Subnetting-Deep-Dive.md)
-- [Subnetting-Supernetting.md](./Day_5-Subnetting-Supernetting.md)
+- [Subnetting-Supernetting.md](./Day_5-Subnetting-and-Supernetting.md)
 - [Inter-Networking-Devices.md](./Day_6-Inter-Networking-Devices.md)
 - [README.md](./README.md)
 

@@ -12,6 +12,7 @@ This repository contains beginner-friendly networking notes, subnetting explanat
 - [Inter-Networking-Devices.md](./Day_6-Inter-Networking-Devices.md)
 - [DHCP, TCP, and Port Numbers](./Day_7-DHCP-TCP-and-Port-Numbers.md)
 - [Subnetting Practice Questions with Answers](./Day_8-Subnetting-Practice-Questions.md)
+- [Day 9 - Switching, VLANs, Network Design & Linux Networking](./Day_9-Switching-VLANs-and-Linux-Networking.md)
 
 ## Repository Purpose
 
@@ -62,6 +63,7 @@ This repository is designed for practical learning in:
 8. Study device behavior with CCNA internetworking concepts
 9. Learn DHCP, TCP communication, port numbers, and end-to-end packet flow
 10. Solve the subnetting practice questions and review the step-by-step calculations in Day 8
+11. Study switching, VLAN segmentation, network design, and Linux networking in Day 9
 
 ## Notes
 

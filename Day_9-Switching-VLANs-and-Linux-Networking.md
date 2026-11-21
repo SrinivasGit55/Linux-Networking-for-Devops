@@ -324,6 +324,124 @@ Protect private keys and set restrictive permissions where appropriate:
 chmod 400 private-key.pem
 ```
 
+### SSH Key-Based Authentication
+
+SSH keys provide an alternative to password-based remote login. A key pair consists of a **private key** kept on the client and a **public key** installed on the remote account. Never share your private key.
+
+#### 1. Generate a key pair with ssh-keygen
+
+On the client machine:
+
+```bash
+ssh-keygen -t ed25519
+```
+
+Accept the default file path (typically `~/.ssh/id_ed25519`) or choose another. The public key is saved as `~/.ssh/id_ed25519.pub`. You may protect the private key with a passphrase.
+
+View the public key:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+#### 2. Copy the public key with ssh-copy-id
+
+```bash
+ssh-copy-id username@server-ip
+```
+
+Example:
+
+```bash
+ssh-copy-id ec2-user@192.168.1.20
+```
+
+This installs your client public key into the remote account's `~/.ssh/authorized_keys`. Initial access must already be possible (often using a password or another permitted authentication method). The `ssh-copy-id` utility must be available on the client.
+
+#### 3. Connect using the key
+
+```bash
+ssh username@server-ip
+```
+
+If the key is in a non-default location:
+
+```bash
+ssh -i ~/.ssh/my_key username@server-ip
+```
+
+The private key stays on the client. SSH proves possession of the matching private key; the key itself is not sent to the server.
+
+#### 4. Remote key file and permissions
+
+The remote account stores authorized public keys in:
+
+```text
+~/.ssh/authorized_keys
+```
+
+Typical permissions:
+
+```bash
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+```
+
+Ensure the files and directory are owned by the remote account. Do not overwrite existing `authorized_keys` entries when adding another key.
+
+#### 5. Manual setup if ssh-copy-id is unavailable
+
+On the client, display and copy the full public-key line:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+On the remote server, using an already-working login:
+
+```bash
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+nano ~/.ssh/authorized_keys
+```
+
+Paste the public key as one line, save, and set:
+
+```bash
+chmod 600 ~/.ssh/authorized_keys
+```
+
+Append the new key; preserve any existing keys.
+
+#### 6. SSH key authentication flow
+
+```text
+Client                         Remote server
+  |--- SSH connection request --->|
+  |<-- authentication challenge --|
+  |--- proof using private key ->|
+  |<---- authentication OK ------|
+  |==== encrypted session =======|
+```
+
+#### 7. Troubleshooting key login
+
+- Verify username, server address, and private-key path.
+- Confirm the matching public key is in the remote account's `authorized_keys`.
+- Check ownership and permissions of the remote home directory, `.ssh`, and `authorized_keys`.
+- Confirm server configuration permits public-key authentication.
+- Use verbose client output and server logs:
+
+```bash
+ssh -v username@server-ip
+sudo journalctl -u ssh --no-pager -n 50
+sudo journalctl -u sshd --no-pager -n 50
+ls -ld ~/.ssh
+ls -l ~/.ssh/authorized_keys
+```
+
+Service name and log location can vary by Linux distribution. Keep a working SSH session open while making remote SSH changes and test a second connection before closing it.
+
 ### 19.3 SSH server configuration
 
 Server configuration is typically in `/etc/ssh/sshd_config`. Make a backup before editing.
